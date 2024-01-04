@@ -50,3 +50,115 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+@keyframes slide {
+    0% {opacity: 0;}
+    10% {opacity: 1; background-image:url("/Media/slider1.jpg");}
+    20% {opacity: 0;}
+    30% {opacity: 1; background-image:url("/Media/slider2.jpg");}
+    40% {opacity: 0;}
+    50% {opacity: 1; background-image:url("/Media/slider3.jpg");}
+    60% {opacity: 0;}
+    70% {opacity: 1; background-image:url("/Media/slider4.jpg");}
+    80% {opacity: 0;}
+    90% {opacity: 1; background-image:url("/Media/slider5.jpg");}
+    100% {opacity: 0;}
+}
+
+.contact {
+    padding: 40px;
+    background: #e3e3e3;
+}
+.contact h2 {
+    text-align: center;
+}
+.contact-form {
+    max-width: 1200em;
+    width: 80%;
+    margin: auto;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+input,
+select {
+    padding: 8px 10px;
+}
+
+input[type=submit] {
+    background-color: #8B0000;
+    color: #f1f1f1;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+textarea {
+    height: 10vh;
+}
+footer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8B0000;
+    padding:20px;
+    
+}
+footer h3{
+    color:#f1f1f1;
+    padding:10px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+  
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .main_logo h1 {
+        display: none;
+    }
+
+    .main_header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .main_navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        width: 100%; 
+        
+    }
+
+    .main_navigation a {
+        padding: 10px;
+        flex: 1;
+    }
+
+    .slider{
+        max-width: 300em;
+        height: 40vh;
+    }
+
+    .contact-form {
+        height: 50vh;
+    }
+
+    .contact-form textarea {
+        height: 10vh;
+    }
+
+    .contact-form input, select, textarea{
+        padding-top: 30px;
+       
+    }
+    
+}
+
